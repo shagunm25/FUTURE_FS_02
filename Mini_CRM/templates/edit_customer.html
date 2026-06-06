@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Edit Customer | Mini CRM</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="form-page">
+      <div class="form-card">
+        <div class="form-header">
+          <div class="form-icon">
+            <i class="fa-solid fa-user-pen"></i>
+          </div>
+
+          <h1>Edit Customer</h1>
+
+          <p>Update customer information and save the changes.</p>
+        </div>
+
+        <form method="POST">
+          <div class="input-group">
+            <label> Customer Name </label>
+
+            <input
+              type="text"
+              name="name"
+              value="{{ customer.name }}"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label> Email Address </label>
+
+            <input
+              type="email"
+              name="email"
+              value="{{ customer.email }}"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label> Phone Number </label>
+
+            <input
+              type="text"
+              name="phone"
+              value="{{ customer.phone }}"
+              required
+            />
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit" class="save-btn">
+              <i class="fa-solid fa-rotate"></i>
+              Update Customer
+            </button>
+
+            <a href="/" class="back-btn">
+              <i class="fa-solid fa-arrow-left"></i>
+              Back To Dashboard
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

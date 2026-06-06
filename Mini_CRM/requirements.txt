@@ -1,0 +1,2 @@
+Task folder initialized
+Flask==3.1.2
