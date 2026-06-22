@@ -21,7 +21,7 @@ deleteButtons.forEach(button => {
 
         const confirmDelete =
             confirm(
-                "Are you sure you want to delete this customer?"
+                "Are you sure you want to delete the customer?"
             );
 
         if (!confirmDelete) {

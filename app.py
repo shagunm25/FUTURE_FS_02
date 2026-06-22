@@ -188,7 +188,7 @@ def edit_customer(id):
 
     conn.close()
 
-    flash("Customer updated successfully!", "success")
+    flash("Customer saved successfully!", "success")
 
     return render_template(
         "edit_customer.html",
