@@ -8,9 +8,10 @@ A Customer Relationship Management (CRM) Web Application built using Flask and S
 - Edit Customer
 - Delete Customer
 - Search Customer
+- Export Customer Data to CSV
 - Dashboard Statistics
 - Responsive Design
-- Dark Slate and Orange Theme
+- Modern UI with Purple and Navy Blue Theme
 
 ## Technologies Used
 
@@ -21,34 +22,26 @@ A Customer Relationship Management (CRM) Web Application built using Flask and S
 - CSS
 - JavaScript
 
-## Project Structure
-
-Mini_CRM
-│
-├── app.py
-├── database.db
-├── requirements.txt
-│
-├── templates
-│ ├── index.html
-│ ├── add_customer.html
-│ └── edit_customer.html
-│
-├── static
-│ ├── css
-│ │ └── style.css
-│ │
-│ └── js
-│ └── script.js
-│
-└── README.md
-
 ## Run Project
 
+```bash
 pip install -r requirements.txt
+```
 
+```bash
 python app.py
+```
 
 Open:
 
+```text
 http://127.0.0.1:5000
+```
+
+## Author
+
+SHAGUN MANGAL
+
+## License
+
+This project is developed for learning, portfolio, and internship purposes.
